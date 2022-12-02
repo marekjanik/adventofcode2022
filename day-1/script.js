@@ -2260,9 +2260,9 @@ const calories = `22243
 
 const caloriesSumsArr = calories
   .split('\n\n')
-  .map((calory) => calory.split('\n'))
-  .map((calory) =>
-    calory
+  .map((caloriesStr) => caloriesStr.split('\n'))
+  .map((caloriesStrArr) =>
+    caloriesStrArr
       .map((calory) => parseInt(calory))
       .reduce((previousValue, currentValue) => previousValue + currentValue)
   );
